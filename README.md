@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Will You Be My Valentine?</title>
+    <title>Can I be your Valentine?</title>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <style>
         body {
@@ -99,9 +99,6 @@
         <p>Hey Babyy :3</p>
     </div>
 
-    <audio id="valentineSong" src="https://docs.google.com/uc?export=download&id=1xqjwLtFFrFHiZ_a_nD0zV9hCPQyLJTXw"></audio>
-    <audio id="loveSong" src="https://open.spotify.com/track/4HFAhNtnR6mXagPhUBqY07" type="audio/mpeg"></audio>
-
     <div class="button-container">
         <button class="button" id="yesButton" onclick="playLoveSong()">Yes!</button>
         <button class="button" id="noButton" onmouseover="moveNoButton(event)">No!</button>
@@ -114,15 +111,16 @@
 
     <script>
         function playLoveSong() {
-            const loveSong = document.getElementById("loveSong");
-            loveSong.play();
+            // Open the Spotify playlist in a new tab
+            window.open("https://open.spotify.com/playlist/6G3huDZn1EH2dFPVLlVo3I?si=268a4b1611fd4381", "_blank");
+
             // Trigger heart effect
             generateHearts();
-            alert("Yay! Thank you, babe. I can't wait to spend Valentine's with you");
+            alert("Yay! Thank you, babe. I can't wait to spend Valentine's with you ❤️");
 
-            // Redirect to iMessage (SMS link as a fallback)
+            // Redirect to iMessage (SMS fallback)
             setTimeout(() => {
-                window.location.href = "sms:?body=Yes! I would love to be your Valentine";
+                window.location.href = "sms:?body=Yes! I would love to be your Valentine ❤️";
             }, 2000);
         }
 
