@@ -123,11 +123,11 @@
             loveSong.play();
             // Trigger confetti effect
             generateConfetti();
-            alert("Yay! Can't wait to spend Valentine's with you ❤️");
+            alert("Yay! Thank you, babe. I can't wait to spend Valentine's with you");
 
             // Redirect to iMessage (SMS link as a fallback)
             setTimeout(() => {
-                window.location.href = "sms:?body=Yes! I would love to be your Valentine ❤️";
+                window.location.href = "sms:?body=Yes! I would love to be your Valentine";
             }, 2000);
         }
 
