@@ -111,14 +111,13 @@
 
     <script>
         function playLoveSong() {
-            // Open the Spotify playlist in a new tab
+          
             window.open("https://open.spotify.com/playlist/6G3huDZn1EH2dFPVLlVo3I?si=268a4b1611fd4381", "_blank");
 
-            // Trigger heart effect
             generateHearts();
             alert("Yay! Thank you, babe. I can't wait to spend Valentine's with you ❤️");
 
-            // Redirect to iMessage (SMS fallback)
+          
             setTimeout(() => {
                 window.location.href = "sms:?body=Yes! I would love to be your Valentine ❤️";
             }, 2000);
@@ -134,7 +133,7 @@
             noButton.style.top = `${randomY}px`;
         }
 
-        // Generate hearts
+     
         function generateHearts() {
             const heartsContainer = document.getElementById('hearts');
             for (let i = 0; i < 30; i++) {
