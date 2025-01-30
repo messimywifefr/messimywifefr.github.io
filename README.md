@@ -73,13 +73,12 @@
             height: 25px;
             background-color: white;
             clip-path: polygon(50% 0%, 0% 50%, 50% 100%, 100% 50%);
-            animation: popUp 2s ease-in-out infinite;
+            animation: float 3s ease-in-out infinite;
             opacity: 0.9;
         }
-        @keyframes popUp {
-            0% { transform: translateY(0) scale(0.5); opacity: 0.9; }
-            50% { transform: translateY(-150px) scale(1.5); opacity: 1; }
-            100% { transform: translateY(-300px) scale(2); opacity: 0; }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-300px); }
         }
 
         @media (max-width: 600px) {
